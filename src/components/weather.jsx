@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { FaSearch } from "react-icons/fa"
-import main_img from '../images/main_img.png'
 import { PiWindFill } from "react-icons/pi"
 import { WiHumidity } from "react-icons/wi"
 
@@ -48,10 +47,10 @@ const Weather = () => {
                 </span>
             </div> 
             <center className="">
-                <img src={weatherData.icon} alt="weather image" className='w-48' />
+                <img src={weatherData.icon} alt="weather image" className='w-28' />
             </center>
             <div className="text-center my-5 text-white">
-                <p className="font-bold mb-2 text-3xl uppercase">{weatherData.temp}</p>
+                <p className="font-bold mb-2 text-3xl uppercase">{weatherData.temp}<span className='text-4xl'>°</span></p>
                 <p className="uppercase font-bold text-xl">{weatherData.name}</p>
             </div>
             <div className="flex justify-between items-center">
